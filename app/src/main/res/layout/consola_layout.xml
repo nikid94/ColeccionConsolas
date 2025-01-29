@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:id="@+id/linearLayout"
+                                                   android:backgroundTint="@color/accionadores"
+                                                   android:background="@color/fondo"
+                                                   android:layout_height="250dp"
+                                                   android:layout_marginLeft="20dp"
+                                                   android:layout_marginTop="20dp"
+                                                   android:layout_marginRight="20dp">
+
+    <TextView
+            android:text="@string/consola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txTitulo"
+            style="@style/TextoSombra"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"/>
+
+    <TextView
+            android:text="@string/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txDescripcion"
+            style="@style/TextoSombra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txTitulo"
+            android:layout_marginTop="28dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/baseline_favorite"
+            android:id="@+id/btnFav"
+            app:backgroundTint="@color/verde"
+            app:tint="@null"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>
